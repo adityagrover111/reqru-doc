@@ -207,12 +207,16 @@ nav.scrolled {
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
+/* fix remove min height overflow max */
+
 /* Mobile menu */
 .mobile-menu {
   position: fixed;
   top: 80px;
-  min-height: 150px;
+  min-height: 600px;
   left: 0;
+  overflow-y: auto;
+  bottom: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(25px);

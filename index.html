@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ReQru - Recruitment Platform Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-container">
+        <div
+          class="nav-brand"
+          onclick="window.open('https://www.reqru.in/login', '_blank')"
+        >
+          <div>
+            <div class="nav-title">ReQru</div>
+            <div class="nav-subtitle">Documentation</div>
+          </div>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#overview" class="active">Overview</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#job-location">Job Locations</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#applications">Applications</a></li>
+          <li><a href="#candidates">Candidates</a></li>
+          <li><a href="#interviews">Interviews</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#reports">Reports</a></li>
+          <li><a href="#performance">Performance</a></li>
+        </ul>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <ul class="nav-links">
+          <li><a href="#overview" class="active">Overview</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#job-location">Job Locations</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#applications">Applications</a></li>
+          <li><a href="#candidates">Candidates</a></li>
+          <li><a href="#interviews">Interviews</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#reports">Reports</a></li>
+          <li><a href="#performance">Performance</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section id="overview">
+        <h1>Reqru Recruitment Platform</h1>
+        <p>
+          Reqru is a streamlined recruitment management system designed to
+          simplify hiring workflows for companies, recruiters, and candidates
+          alike. It centralizes job postings, client management, candidate
+          tracking, and interview scheduling into one easy-to-use platform.
+        </p>
+        <p>
+          The system aims to enhance recruitment efficiency through intuitive
+          interfaces, robust search and filter features, and detailed reporting
+          tools. Its modular design supports all stages of the hiring process,
+          making it adaptable to various organizational needs.
+        </p>
+      </section>
+
+      <section id="dashboard">
+        <h2>1. Dashboard</h2>
+        <p>
+          The Dashboard serves as the central hub for users upon login,
+          providing quick insights and actionable summaries. It displays
+          high-level metrics such as the total number of job openings, active
+          candidates, scheduled interviews, and recent activity logs.
+        </p>
+        <p>
+          Users can customize widgets to focus on the information most relevant
+          to their role, enabling them to monitor key performance indicators at
+          a glance.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>2. Skills Management</h2>
+        <p>
+          The Skills page enables administrators and recruiters to manage the
+          catalog of skills relevant to job postings. Skills can be added,
+          edited, or removed to ensure the database reflects current market and
+          organizational requirements.
+        </p>
+        <p>
+          Skill entries support clean categorization and can be linked to
+          multiple job roles to facilitate accurate candidate matching.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Skill Name</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>Java Programming</td>
+              <td>Edit | Delete</td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Project Management</td>
+              <td>Edit | Delete</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>How to add a new skill:</strong></p>
+        <ol>
+          <li>Click the 'Create New' button.</li>
+          <li>Enter the skill name in the provided field.</li>
+          <li>Optionally add more skills using the '+' button.</li>
+          <li>Click 'Save' to finalize additions.</li>
+        </ol>
+      </section>
+
+      <section id="clients">
+        <h2>3. Client Management</h2>
+        <p>
+          The Clients section manages all recruitment clients associated with
+          your organization. Each client entry includes company name, contact
+          person, phone number, and email.
+        </p>
+        <p>
+          This centralized list supports efficient communication and allows
+          linking clients directly to job postings for streamlined workflow.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Company Name</th>
+              <th>Contact</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>ABC Tech</td>
+              <td>John Doe</td>
+              <td>123-456-7890</td>
+              <td>john@abctech.com</td>
+              <td>Edit | Delete</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>To add a new client:</strong></p>
+        <ol>
+          <li>Click the 'Create New' button.</li>
+          <li>Fill in the company and contact details in the form.</li>
+          <li>Click 'Save' to add the client to the system.</li>
+        </ol>
+      </section>
+
+      <section id="job-location">
+        <h2>4. Job Locations</h2>
+        <p>
+          Manage all geographic locations where jobs are posted or available.
+          Locations are crucial for filtering job searches and for candidates to
+          find relevant opportunities.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Location Name</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>New York</td>
+              <td>Edit | Delete</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>Steps to add a location:</strong></p>
+        <ol>
+          <li>Click the 'Create New' button.</li>
+          <li>Enter the location name.</li>
+          <li>Click 'Save' to confirm.</li>
+        </ol>
+      </section>
+
+      <section id="jobs">
+        <h2>5. Jobs</h2>
+        <p>
+          The Jobs module is where all open positions are created, edited, and
+          managed. Each job links to a client, category, location, and relevant
+          skills, allowing for detailed filtering and candidate matching.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Job Title</th>
+              <th>Category</th>
+              <th>Client</th>
+              <th>Location</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Software Engineer</td>
+              <td>IT</td>
+              <td>ABC Tech</td>
+              <td>New York</td>
+              <td>Edit | Delete</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>To add a job:</strong></p>
+        <ol>
+          <li>Click 'Create New'.</li>
+          <li>
+            Fill out job details including title, category, client, and
+            location.
+          </li>
+          <li>Select applicable skills from the skill list.</li>
+          <li>Save the job posting.</li>
+        </ol>
+      </section>
+
+      <section id="applications">
+        <h2>6. Job Applications</h2>
+        <p>
+          This section lists candidates who have applied for available job
+          openings. Recruiters can view application details, update statuses,
+          and manage communication with applicants efficiently.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Candidate Name</th>
+              <th>Applied Job</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Jane Smith</td>
+              <td>Software Engineer</td>
+              <td>Under Review</td>
+              <td>View | Update Status</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="candidates">
+        <h2>7. Candidate Database & Onboarding</h2>
+        <p>
+          The Candidate Database maintains a comprehensive record of all
+          candidates who have applied or been sourced. It supports search,
+          filtering, and editing of candidate profiles.
+        </p>
+        <p>
+          Onboarding functionality helps transition selected candidates smoothly
+          into the organization by tracking necessary steps and documentation.
+        </p>
+      </section>
+
+      <section id="interviews">
+        <h2>8. Interview Schedule</h2>
+        <p>
+          The Interview Schedule enables recruiters and hiring managers to plan,
+          edit, and cancel interviews. It includes calendar views for easy
+          visualization and notification systems to remind participants of
+          upcoming interviews.
+        </p>
+      </section>
+
+      <section id="team">
+        <h2>9. Team Management</h2>
+        <p>
+          Manage user accounts and roles within the Reqru platform. Assign
+          permissions and roles such as admin, recruiter, or client user to
+          control access and functionality.
+        </p>
+      </section>
+
+      <section id="reports">
+        <h2>10. Reports</h2>
+        <p>
+          Generate and export reports covering clients, candidates, job
+          openings, and recruitment activities. Reports can be filtered to gain
+          insights and improve decision-making.
+        </p>
+        <h3>Features:</h3>
+        <ul>
+          <li>
+            Dashboard displaying total job applications, jobs posted, candidates
+            hired, and interviews scheduled
+          </li>
+          <li>Filter options by company, author, and date range</li>
+          <li>
+            Detailed job application status table across all recruitment stages
+          </li>
+          <li>Visual breakdown of candidate progress per job title</li>
+          <li>Easy tracking of bottlenecks in the hiring process</li>
+        </ul>
+      </section>
+
+      <section id="performance">
+        <h2>11. Performance Report</h2>
+        <p>
+          Detailed analytics track recruitment performance metrics including
+          application volumes, hiring success rates, and individual recruiter
+          activity. This helps in optimizing recruitment strategies.
+        </p>
+        <h3>Features:</h3>
+        <ul>
+          <li>
+            Month-wise, recruiter-wise, and status-wise performance breakdown
+          </li>
+          <li>Tabular view of reports specific to each client</li>
+          <li>Sorting and filtering by client name and other parameters</li>
+          <li>
+            Clear visualization of recruiter contributions and hiring progress
+          </li>
+          <li>
+            Enhanced decision-making through comparative performance analysis
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <script>
+      // Navbar scroll effects
+      const navbar = document.getElementById("navbar");
+      const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      // Add scroll effect to navbar
+      let lastScrollY = window.scrollY;
+
+      window.addEventListener("scroll", () => {
+        const currentScrollY = window.scrollY;
+
+        // Add scrolled class for blur effect
+        if (currentScrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+
+        lastScrollY = currentScrollY;
+      });
+
+      // Mobile menu toggle
+      mobileMenuToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        mobileMenuToggle.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (
+          !mobileMenu.contains(e.target) &&
+          !mobileMenuToggle.contains(e.target)
+        ) {
+          mobileMenuToggle.classList.remove("open");
+          mobileMenu.classList.remove("open");
+        }
+      });
+
+      // Enhanced nav active link highlight
+      const links = document.querySelectorAll("nav a");
+      const sections = [...document.querySelectorAll("section")];
+
+      function setActiveLink() {
+        let index = sections.length;
+        while (--index && window.scrollY + 150 < sections[index].offsetTop) {}
+
+        links.forEach((link) => link.classList.remove("active"));
+        if (links[index]) {
+          links[index].classList.add("active");
+        }
+      }
+
+      // Throttle scroll events for better performance
+      let ticking = false;
+      function requestTick() {
+        if (!ticking) {
+          requestAnimationFrame(setActiveLink);
+          ticking = true;
+        }
+      }
+
+      setActiveLink();
+      window.addEventListener("scroll", () => {
+        requestTick();
+        ticking = false;
+      });
+
+      // Smooth scroll with offset for fixed nav
+      links.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute("href");
+          const targetSection = document.querySelector(targetId);
+
+          if (targetSection) {
+            const offsetTop = targetSection.offsetTop - 100;
+            window.scrollTo({
+              top: offsetTop,
+              behavior: "smooth",
+            });
+          }
+
+          // Close mobile menu if open
+          mobileMenuToggle.classList.remove("open");
+          mobileMenu.classList.remove("open");
+
+          // Update active states
+          links.forEach((l) => l.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

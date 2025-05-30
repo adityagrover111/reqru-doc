@@ -213,7 +213,7 @@ nav.scrolled {
 .mobile-menu {
   position: fixed;
   top: 80px;
-  min-height: 600px;
+  height: calc(100vh - 80px);
   left: 0;
   overflow-y: auto;
   bottom: 0;
